@@ -1,30 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
 * {
   margin: 0;
+  padding: 0;
 }
 
 body {
+  font-family: 'Overpass', sans-serif;
   background: #141519;
   color: white;
-}
-
-ul {
-  list-style: none;
+  height: 100vh;
+  padding: 0 20px;
   display: flex;
-  gap: 15px;
+  justify-items: center;
+  align-items: center;
 }
 
-li {
-  background: #272E38;
+.box-container {
+  background: linear-gradient(180deg, #232A32 0%, #181D24 100%);
+  display: grid;
+  gap: 30px;
+  max-width: 410px;
+  border-radius: 15px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.circle {
   width: 50px;
   height: 50px;
+  background: #272E38;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.box-container {
-  max-width: 410px;
-  background: #232A32;
-  border-radius: 15px;
+.text {
+  padding-right: 20px;
+}
+
+.text h1 {
+  margin-bottom: 15px;
+}
+
+.text p {
+  font-size: 15px;
+  color: #8A909C;
+  line-height: 24px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+li.active {
+  background: #7C8898;
+}
+
+li:hover {
+  cursor: pointer;
+  background: #FB7616;
+}
+
+button {
+  width: 100%;
+  border-radius: 20px;
+  padding: 15px 0;
+  text-transform: uppercase;
+  color: white;
+  background: hsl(25, 97%, 53%);
+  border: none;
+}
+
+button:hover {
+  cursor: pointer;
+  background: white;
+  color: hsl(25, 97%, 53%);
+}
+
+/* Submit area */
+.chosen-note {
+  color: hsl(25, 97%, 53%);
+  background: #262F38;
+  border-radius: 50px;
+  padding: 10px 20px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.img-feedback {
+  margin: 0 auto;
+}
+
+.center {
+  text-align: center;
+}
+
+
+@media (max-width: 400px) {
+  .box-container {
+    padding: 20px;
+  }
+  .text {
+    padding-right: 0px;
+  }
 }
