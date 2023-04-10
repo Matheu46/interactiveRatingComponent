@@ -20,8 +20,8 @@ body {
   background: linear-gradient(180deg, #232A32 0%, #181D24 100%);
   display: grid;
   gap: 30px;
-  max-width: 410px;
-  border-radius: 15px;
+  max-width: 350px;
+  border-radius: 30px;
   margin: 0 auto;
   padding: 30px;
 }
@@ -36,9 +36,6 @@ body {
   justify-content: center;
 }
 
-.text {
-  padding-right: 20px;
-}
 
 .text h1 {
   margin-bottom: 15px;
@@ -70,6 +67,7 @@ button {
   width: 100%;
   border-radius: 20px;
   padding: 15px 0;
+  font-size: 15px;
   text-transform: uppercase;
   color: white;
   background: hsl(25, 97%, 53%);
